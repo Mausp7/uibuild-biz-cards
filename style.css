@@ -13,7 +13,9 @@ body *::after {
   outline: none;
 }
 
-ol, ul, li {
+ol,
+ul,
+li {
   display: block;
   list-style: none;
 }
@@ -27,7 +29,8 @@ a img {
   border: none;
 }
 
-button, a {
+button,
+a {
   cursor: pointer;
   color: inherit;
 }
@@ -36,10 +39,63 @@ textarea {
   resize: none;
 }
 
-button, input, textarea, select {
+button,
+input,
+textarea,
+select {
   -moz-appearance: none !important;
        appearance: none !important;
   -webkit-appearance: none !important;
   border-radius: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background-color: #ffeedf;
+  font-family: "EB Garamond", serif;
+}
+
+body div.card {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 290px;
+  height: 416px;
+  margin: 0 31px;
+  padding: 27px;
+  background-color: #fff;
+}
+
+body div.card h2 {
+  font-size: 48px;
+  font-weight: normal;
+  color: #33793f;
+}
+
+body div.card h6 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: medium;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #999;
+}
+
+body div.card p {
+  font-size: 24px;
+  font-weight: normal;
+  color: #999;
 }
 /*# sourceMappingURL=style.css.map */
