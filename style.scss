@@ -55,10 +55,16 @@ select {
 body {
 	display: flex;
 	flex-direction: row;
+	@media screen and (max-width: 1024px) {
+		flex-direction: column;
+	}
+
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
 
+	padding-top: 50px;
+	padding-bottom: 50px;
 	background-color: #ffeedf;
 
 	font-family: "EB Garamond", serif;
@@ -68,17 +74,21 @@ body {
 		width: 290px;
 		height: 416px;
 
-		margin: 0 31px;
+		margin: 31px;
 		padding: 27px;
 		background-color: #fff;
 
 		h2 {
+			margin-bottom: 12px;
+
 			font-size: 48px;
 			font-weight: normal;
 			color: #33793f;
 		}
 
 		h6 {
+			margin-bottom: 24px;
+
 			font-family: "Montserrat", sans-serif;
 			font-size: 14px;
 			font-weight: medium;

@@ -64,8 +64,19 @@ body {
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #ffeedf;
   font-family: "EB Garamond", serif;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 body div.card {
@@ -73,18 +84,20 @@ body div.card {
       flex-shrink: 0;
   width: 290px;
   height: 416px;
-  margin: 0 31px;
+  margin: 31px;
   padding: 27px;
   background-color: #fff;
 }
 
 body div.card h2 {
+  margin-bottom: 12px;
   font-size: 48px;
   font-weight: normal;
   color: #33793f;
 }
 
 body div.card h6 {
+  margin-bottom: 24px;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: medium;
